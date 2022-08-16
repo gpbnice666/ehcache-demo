@@ -1,0 +1,10 @@
+# EhCache基础配置项
+ehcache:
+  heap: 10           # 堆内缓存的个数
+  off-heap: 10       # 堆外缓存内存存储大小 MB
+  disk: 20           # 磁盘存储数据大小 MB
+  diskDir: D:/data/  # 磁盘储存数据的位置 MB
+  cacheNames:        # 基于 CacheManager 构建多少个缓存
+    - user
+    - item
+    - card
